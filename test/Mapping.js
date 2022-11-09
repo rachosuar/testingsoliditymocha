@@ -23,7 +23,7 @@ describe("Mapping", function () {
     describe("Actualizar el balance", function () {
       it("Should return the new balance after updating.", async function () {
         await contractInstance.updateBalance(20);
-        await contractInstance.wait();
+        await contractInstancecd.wait();
         const result = await contractInstance.balance(signers.defaultSigner);
 
         expect(result).to.equal(20);
